@@ -1,0 +1,12 @@
+<div class="age-calculator">
+    <label for="ageInput">Enter your age:</label>
+    <input
+      id="ageInput"
+      type="number"
+      [(ngModel)]="age"
+      (ngModelChange)="onAgeChange()"
+      min="0"
+    />
+    <p>You are {{ ageInMonths }} months old.</p>
+  </div>
+  

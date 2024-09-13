@@ -1,0 +1,19 @@
+<div class="controls">
+    <label>
+      Width (px):
+      <input type="number" [(ngModel)]="boxWidth" min="50" max="500" />
+    </label>
+  
+    <label>
+      Height (px):
+      <input type="number" [(ngModel)]="boxHeight" min="50" max="500" />
+    </label>
+  
+    <label>
+      Background Color:
+      <input type="color" [(ngModel)]="boxColor" />
+    </label>
+  </div>
+  
+  <div class="box" [ngStyle]="getBoxStyles()"></div>
+  

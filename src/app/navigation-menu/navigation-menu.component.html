@@ -1,0 +1,13 @@
+<div class="nav-menu">
+    <button
+      *ngFor="let item of menuItems"
+      [ngClass]="{ active: selectedItem === item }"
+      (click)="selectMenu(item)"
+    >
+      {{ item }}
+    </button>
+  </div>
+  <div id="output">
+    You chose {{ selectedItem }} menu
+  </div>
+  
